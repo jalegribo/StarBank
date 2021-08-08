@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Registro Stark bank</title>
+    </head>
+    <body>   
+    <header>
+        <h1>StarkBank </h1>
+    </header>
+        <main>
+            <h3>Formulario de Registro</h3>
+            <section class="section-form">
+                <form action="">                  
+                    <label for="tipoPersona">Registre el tipo de persona</label>
+                        <div>
+                            <input type="radio" name="opcion"  id="natural"value="Natrual" >Persona Natural</input>
+                            <input type="radio" name="opcion" id ="juridica"value="Juridica" checked>Persoan juridica</input> 
+                        </div>                                                                                                                                                      
+                    <label for="tipoCuenta">Registre el tipo de Cuenta</label>
+                    <input list="tipoCuenta">
+                        <datalist id="tipoCuenta">
+                            <option value="Ahorro">Cuenta de ahorros</option>
+                            <option value="Corriente">Cuenta corriente</option>                            
+                    </datalist>  
+                    <label for="nombreTitular">Nombre Completo</label>                    
+                    <input id="nombreTitular" type="text">         
+                    <label for="identificacion">identificacion</label>
+                    <input type="text">
+                    <label for="ocupacion">¿Cual es su ocupacion ?</label>
+                    <input id="ocupacion"type="text">
+                    <label for="numeroContacto">Numero de contacto</label>
+                    <input id="numeroContacto"type="tel">
+                    <label id="labelNit" for="nit">Nit de la Empresa</label>
+                    <input id="nit" type="text" >
+                    <label id ="labelnombreParaEmpresa"for="nombreEmpresa">Nombre de la Empresa</label>
+                    <input id="nombreEmpresa" type="text">
+                    <label id="labelAreaComercial"for="areaComercial">Cual es su Area comercia</label>
+                    <input id="areaComercial"type="text">
+                    <label id="labelDireccionEmpresa"for="direccionEMpresa">Direccion de la empresa</label>
+                    <input id="direccionEmpresa"type="text">
+                    <input type="submit" value="Crear Cuenta">
+                </form>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
